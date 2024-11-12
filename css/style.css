@@ -27,9 +27,6 @@ h4 {
 }
 
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #FEF9D9;
   padding: 20px;
   margin: 20px auto;
@@ -118,7 +115,6 @@ iframe {
 
 #map {
   height: 100%;
-  border-radius: 8px;
 }
 
 html, body {
