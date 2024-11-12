@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Akaya Kanadaka", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #D2E0FB;
+  color: #333;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.akaya-kanadaka-regular {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #2c3e50;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+section {
+  background: #FEF9D9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+ul,
+ol {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#main-nav {
+  width: 100%;
+  text-align: center; 
+  z-index: 100; 
+  position: sticky;
+  top: 20px;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block; 
+}
+
+#main-nav ul li {
+  display: inline; 
+  float: left;
+  margin-left: 2rem;
+}
+
+#main-nav ul li a {
+  padding: 10px 20px; 
+  color: #2c3e50; 
+  text-decoration: none;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  position: static;
+}
+
+p {
+  margin: 15px 0;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #FFF5CD;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #main-nav ul li {
+    margin-right: 1rem;
+  }
+}
