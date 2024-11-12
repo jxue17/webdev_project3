@@ -39,11 +39,17 @@
       mapId: "DEMO_MAP_ID",
     });
   
-    const marker = new AdvancedMarkerElement({
+    const marker = new google.maps.Marker({
+      position: { lat: 41.8729, lng: -87.62793 },
       map: map,
-      position: position,
       title: "Jones College Prep",
     });
+			
+    const infoWindow = new google.maps.InfoWindow({
+      content: "<h2>Jones College Prep</h2><p>This is the school that I'm currently attending.</p>",
+    });
+  
+			
   }
   
   initMap();
