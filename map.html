@@ -24,3 +24,29 @@
       </ul>
     </nav>
   </section>
+  <div id="map" style="height: 400px; width: 100%;"></div>
+  <script>
+  let map;
+
+  async function initMap() {
+    const position = { lat: 41.8729, lng: -87.62793 };
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  
+    map = new Map(document.getElementById("map"), {
+      zoom: 4,
+      center: position,
+      mapId: "DEMO_MAP_ID",
+    });
+  
+    const marker = new AdvancedMarkerElement({
+      map: map,
+      position: position,
+      title: "Jones College Prep",
+    });
+  }
+  
+  initMap();
+  </script>
+</body>
+</html>
