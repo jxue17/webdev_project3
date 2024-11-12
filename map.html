@@ -44,6 +44,27 @@
       content: "<h2>Jones College Prep</h2><p>This is the school that I'm currently attending.</p>",
     });
 		
+		const marker = new google.maps.Marker({
+      position: { lat: 41.844974, lng: -87.646171 },
+      map: map,
+      title: "Taipei Cafe",
+    });
+			
+    const infoWindow = new google.maps.InfoWindow({
+      content: "<h2>Taipei Cafe</h2><p>This is where I currently work at.</p>",
+    });
+		
+		const marker = new google.maps.Marker({
+      position: { lat: 41.840737, lng: -87.647649 },
+      map: map,
+      title: "Mcguane Park",
+    });
+			
+    const infoWindow = new google.maps.InfoWindow({
+      content: "<h2>Mcguane Park</h2><p>I used to go to this park very often with friends.</p>",
+    });
+		
+		
     marker.addListener("click", () => {
       infoWindow.open(map, marker);
     });
