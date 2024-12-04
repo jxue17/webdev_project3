@@ -99,7 +99,7 @@ iframe {
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media {
   section {
     padding: 1rem;
   }
